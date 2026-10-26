@@ -1,0 +1,21 @@
+contractor_id,contractor_name,specialization,active_status,license_type,projects_completed,average_delay_days,average_cost_overrun_pct,historical_risk_score
+CON-001,Contractor A Engineering,STRUCTURAL,True,CLASS_A,8,7.71,5.58,87.94
+CON-002,Contractor B Engineering,MEP,True,CLASS_A,13,3.44,15.91,87.39
+CON-003,Contractor C Engineering,STRUCTURAL,True,CLASS_B,18,14.47,15.16,44.66
+CON-004,Contractor D Engineering,STRUCTURAL,True,CLASS_A,19,10.06,8.57,71.09
+CON-005,Contractor E Engineering,MEP,True,CLASS_B,17,14.19,1.17,58.69
+CON-006,Contractor F Engineering,MEP,True,CLASS_B,21,6.99,14.72,76.73
+CON-007,Contractor G Engineering,ROAD,True,CLASS_B,12,10.52,15.36,67.85
+CON-008,Contractor H Engineering,MEP,True,CLASS_B,3,12.63,14.35,80.52
+CON-009,Contractor I Engineering,MEP,True,CLASS_A,7,13.47,11.21,55.12
+CON-010,Contractor J Engineering,ELECTRICAL,True,CLASS_B,6,8.75,10.46,70.46
+CON-011,Contractor K Engineering,ELECTRICAL,True,CLASS_B,6,10.47,8.28,34.01
+CON-012,Contractor L Engineering,ELECTRICAL,True,CLASS_B,9,5.6,3.26,89.56
+CON-013,Contractor M Engineering,STRUCTURAL,True,CLASS_A,22,10.0,14.25,44.97
+CON-014,Contractor N Engineering,MEP,True,CLASS_B,11,1.3,6.26,21.49
+CON-015,Contractor O Engineering,CIVIL,True,CLASS_A,21,14.94,2.1,78.13
+CON-016,Contractor P Engineering,CIVIL,True,CLASS_A,3,13.19,8.83,28.96
+CON-017,Contractor Q Engineering,MEP,True,CLASS_B,16,8.23,8.62,81.94
+CON-018,Contractor R Engineering,ELECTRICAL,True,CLASS_A,13,16.41,7.0,49.98
+CON-019,Contractor S Engineering,ROAD,True,CLASS_B,8,17.51,1.39,44.68
+CON-020,Contractor T Engineering,ELECTRICAL,True,CLASS_B,3,7.16,10.5,89.21

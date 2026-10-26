@@ -1,0 +1,181 @@
+clause_id,contract_id,vendor_id,section,clause_number,title,clause_text,document_page,clause_type,penalty_applicable,embedding_id
+CLAUSE-001-81,CONTRACT-001,VEN-001,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,8,DELIVERY,False,vec-CLAUSE-001-81
+CLAUSE-001-84,CONTRACT-001,VEN-001,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",7,PENALTY,True,vec-CLAUSE-001-84
+CLAUSE-001-92,CONTRACT-001,VEN-001,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,54,QUANTITY,False,vec-CLAUSE-001-92
+CLAUSE-001-103,CONTRACT-001,VEN-001,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,34,QUALITY,False,vec-CLAUSE-001-103
+CLAUSE-001-121,CONTRACT-001,VEN-001,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,30,NOTICE,False,vec-CLAUSE-001-121
+CLAUSE-001-142,CONTRACT-001,VEN-001,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,25,CHANGE_ORDER,False,vec-CLAUSE-001-142
+CLAUSE-002-81,CONTRACT-002,VEN-002,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,49,DELIVERY,False,vec-CLAUSE-002-81
+CLAUSE-002-84,CONTRACT-002,VEN-002,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",39,PENALTY,True,vec-CLAUSE-002-84
+CLAUSE-002-92,CONTRACT-002,VEN-002,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,25,QUANTITY,False,vec-CLAUSE-002-92
+CLAUSE-002-103,CONTRACT-002,VEN-002,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,33,QUALITY,False,vec-CLAUSE-002-103
+CLAUSE-002-121,CONTRACT-002,VEN-002,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,36,NOTICE,False,vec-CLAUSE-002-121
+CLAUSE-002-142,CONTRACT-002,VEN-002,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,12,CHANGE_ORDER,False,vec-CLAUSE-002-142
+CLAUSE-003-81,CONTRACT-003,VEN-003,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,44,DELIVERY,False,vec-CLAUSE-003-81
+CLAUSE-003-84,CONTRACT-003,VEN-003,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",31,PENALTY,True,vec-CLAUSE-003-84
+CLAUSE-003-92,CONTRACT-003,VEN-003,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,50,QUANTITY,False,vec-CLAUSE-003-92
+CLAUSE-003-103,CONTRACT-003,VEN-003,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,56,QUALITY,False,vec-CLAUSE-003-103
+CLAUSE-003-121,CONTRACT-003,VEN-003,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,48,NOTICE,False,vec-CLAUSE-003-121
+CLAUSE-003-142,CONTRACT-003,VEN-003,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,21,CHANGE_ORDER,False,vec-CLAUSE-003-142
+CLAUSE-004-81,CONTRACT-004,VEN-004,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,18,DELIVERY,False,vec-CLAUSE-004-81
+CLAUSE-004-84,CONTRACT-004,VEN-004,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",51,PENALTY,True,vec-CLAUSE-004-84
+CLAUSE-004-92,CONTRACT-004,VEN-004,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,17,QUANTITY,False,vec-CLAUSE-004-92
+CLAUSE-004-103,CONTRACT-004,VEN-004,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,18,QUALITY,False,vec-CLAUSE-004-103
+CLAUSE-004-121,CONTRACT-004,VEN-004,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,33,NOTICE,False,vec-CLAUSE-004-121
+CLAUSE-004-142,CONTRACT-004,VEN-004,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,36,CHANGE_ORDER,False,vec-CLAUSE-004-142
+CLAUSE-005-81,CONTRACT-005,VEN-005,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,39,DELIVERY,False,vec-CLAUSE-005-81
+CLAUSE-005-84,CONTRACT-005,VEN-005,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",5,PENALTY,True,vec-CLAUSE-005-84
+CLAUSE-005-92,CONTRACT-005,VEN-005,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,20,QUANTITY,False,vec-CLAUSE-005-92
+CLAUSE-005-103,CONTRACT-005,VEN-005,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,60,QUALITY,False,vec-CLAUSE-005-103
+CLAUSE-005-121,CONTRACT-005,VEN-005,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,43,NOTICE,False,vec-CLAUSE-005-121
+CLAUSE-005-142,CONTRACT-005,VEN-005,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,18,CHANGE_ORDER,False,vec-CLAUSE-005-142
+CLAUSE-006-81,CONTRACT-006,VEN-006,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,31,DELIVERY,False,vec-CLAUSE-006-81
+CLAUSE-006-84,CONTRACT-006,VEN-006,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",13,PENALTY,True,vec-CLAUSE-006-84
+CLAUSE-006-92,CONTRACT-006,VEN-006,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,42,QUANTITY,False,vec-CLAUSE-006-92
+CLAUSE-006-103,CONTRACT-006,VEN-006,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,23,QUALITY,False,vec-CLAUSE-006-103
+CLAUSE-006-121,CONTRACT-006,VEN-006,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,10,NOTICE,False,vec-CLAUSE-006-121
+CLAUSE-006-142,CONTRACT-006,VEN-006,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,30,CHANGE_ORDER,False,vec-CLAUSE-006-142
+CLAUSE-007-81,CONTRACT-007,VEN-007,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,57,DELIVERY,False,vec-CLAUSE-007-81
+CLAUSE-007-84,CONTRACT-007,VEN-007,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",20,PENALTY,True,vec-CLAUSE-007-84
+CLAUSE-007-92,CONTRACT-007,VEN-007,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,8,QUANTITY,False,vec-CLAUSE-007-92
+CLAUSE-007-103,CONTRACT-007,VEN-007,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,38,QUALITY,False,vec-CLAUSE-007-103
+CLAUSE-007-121,CONTRACT-007,VEN-007,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,37,NOTICE,False,vec-CLAUSE-007-121
+CLAUSE-007-142,CONTRACT-007,VEN-007,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,35,CHANGE_ORDER,False,vec-CLAUSE-007-142
+CLAUSE-008-81,CONTRACT-008,VEN-008,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,57,DELIVERY,False,vec-CLAUSE-008-81
+CLAUSE-008-84,CONTRACT-008,VEN-008,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",18,PENALTY,True,vec-CLAUSE-008-84
+CLAUSE-008-92,CONTRACT-008,VEN-008,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,40,QUANTITY,False,vec-CLAUSE-008-92
+CLAUSE-008-103,CONTRACT-008,VEN-008,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,40,QUALITY,False,vec-CLAUSE-008-103
+CLAUSE-008-121,CONTRACT-008,VEN-008,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,44,NOTICE,False,vec-CLAUSE-008-121
+CLAUSE-008-142,CONTRACT-008,VEN-008,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,14,CHANGE_ORDER,False,vec-CLAUSE-008-142
+CLAUSE-009-81,CONTRACT-009,VEN-009,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,28,DELIVERY,False,vec-CLAUSE-009-81
+CLAUSE-009-84,CONTRACT-009,VEN-009,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",48,PENALTY,True,vec-CLAUSE-009-84
+CLAUSE-009-92,CONTRACT-009,VEN-009,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,9,QUANTITY,False,vec-CLAUSE-009-92
+CLAUSE-009-103,CONTRACT-009,VEN-009,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,8,QUALITY,False,vec-CLAUSE-009-103
+CLAUSE-009-121,CONTRACT-009,VEN-009,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,16,NOTICE,False,vec-CLAUSE-009-121
+CLAUSE-009-142,CONTRACT-009,VEN-009,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,47,CHANGE_ORDER,False,vec-CLAUSE-009-142
+CLAUSE-010-81,CONTRACT-010,VEN-010,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,9,DELIVERY,False,vec-CLAUSE-010-81
+CLAUSE-010-84,CONTRACT-010,VEN-010,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",41,PENALTY,True,vec-CLAUSE-010-84
+CLAUSE-010-92,CONTRACT-010,VEN-010,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,13,QUANTITY,False,vec-CLAUSE-010-92
+CLAUSE-010-103,CONTRACT-010,VEN-010,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,54,QUALITY,False,vec-CLAUSE-010-103
+CLAUSE-010-121,CONTRACT-010,VEN-010,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,6,NOTICE,False,vec-CLAUSE-010-121
+CLAUSE-010-142,CONTRACT-010,VEN-010,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,7,CHANGE_ORDER,False,vec-CLAUSE-010-142
+CLAUSE-011-81,CONTRACT-011,VEN-011,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,39,DELIVERY,False,vec-CLAUSE-011-81
+CLAUSE-011-84,CONTRACT-011,VEN-011,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",50,PENALTY,True,vec-CLAUSE-011-84
+CLAUSE-011-92,CONTRACT-011,VEN-011,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,15,QUANTITY,False,vec-CLAUSE-011-92
+CLAUSE-011-103,CONTRACT-011,VEN-011,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,12,QUALITY,False,vec-CLAUSE-011-103
+CLAUSE-011-121,CONTRACT-011,VEN-011,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,55,NOTICE,False,vec-CLAUSE-011-121
+CLAUSE-011-142,CONTRACT-011,VEN-011,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,34,CHANGE_ORDER,False,vec-CLAUSE-011-142
+CLAUSE-012-81,CONTRACT-012,VEN-012,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,29,DELIVERY,False,vec-CLAUSE-012-81
+CLAUSE-012-84,CONTRACT-012,VEN-012,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",15,PENALTY,True,vec-CLAUSE-012-84
+CLAUSE-012-92,CONTRACT-012,VEN-012,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,11,QUANTITY,False,vec-CLAUSE-012-92
+CLAUSE-012-103,CONTRACT-012,VEN-012,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,49,QUALITY,False,vec-CLAUSE-012-103
+CLAUSE-012-121,CONTRACT-012,VEN-012,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,32,NOTICE,False,vec-CLAUSE-012-121
+CLAUSE-012-142,CONTRACT-012,VEN-012,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,50,CHANGE_ORDER,False,vec-CLAUSE-012-142
+CLAUSE-013-81,CONTRACT-013,VEN-013,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,38,DELIVERY,False,vec-CLAUSE-013-81
+CLAUSE-013-84,CONTRACT-013,VEN-013,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",38,PENALTY,True,vec-CLAUSE-013-84
+CLAUSE-013-92,CONTRACT-013,VEN-013,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,37,QUANTITY,False,vec-CLAUSE-013-92
+CLAUSE-013-103,CONTRACT-013,VEN-013,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,55,QUALITY,False,vec-CLAUSE-013-103
+CLAUSE-013-121,CONTRACT-013,VEN-013,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,50,NOTICE,False,vec-CLAUSE-013-121
+CLAUSE-013-142,CONTRACT-013,VEN-013,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,16,CHANGE_ORDER,False,vec-CLAUSE-013-142
+CLAUSE-014-81,CONTRACT-014,VEN-014,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,18,DELIVERY,False,vec-CLAUSE-014-81
+CLAUSE-014-84,CONTRACT-014,VEN-014,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",56,PENALTY,True,vec-CLAUSE-014-84
+CLAUSE-014-92,CONTRACT-014,VEN-014,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,12,QUANTITY,False,vec-CLAUSE-014-92
+CLAUSE-014-103,CONTRACT-014,VEN-014,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,16,QUALITY,False,vec-CLAUSE-014-103
+CLAUSE-014-121,CONTRACT-014,VEN-014,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,15,NOTICE,False,vec-CLAUSE-014-121
+CLAUSE-014-142,CONTRACT-014,VEN-014,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,26,CHANGE_ORDER,False,vec-CLAUSE-014-142
+CLAUSE-015-81,CONTRACT-015,VEN-015,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,10,DELIVERY,False,vec-CLAUSE-015-81
+CLAUSE-015-84,CONTRACT-015,VEN-015,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",49,PENALTY,True,vec-CLAUSE-015-84
+CLAUSE-015-92,CONTRACT-015,VEN-015,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,39,QUANTITY,False,vec-CLAUSE-015-92
+CLAUSE-015-103,CONTRACT-015,VEN-015,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,5,QUALITY,False,vec-CLAUSE-015-103
+CLAUSE-015-121,CONTRACT-015,VEN-015,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,27,NOTICE,False,vec-CLAUSE-015-121
+CLAUSE-015-142,CONTRACT-015,VEN-015,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,31,CHANGE_ORDER,False,vec-CLAUSE-015-142
+CLAUSE-016-81,CONTRACT-016,VEN-016,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,28,DELIVERY,False,vec-CLAUSE-016-81
+CLAUSE-016-84,CONTRACT-016,VEN-016,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",18,PENALTY,True,vec-CLAUSE-016-84
+CLAUSE-016-92,CONTRACT-016,VEN-016,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,8,QUANTITY,False,vec-CLAUSE-016-92
+CLAUSE-016-103,CONTRACT-016,VEN-016,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,13,QUALITY,False,vec-CLAUSE-016-103
+CLAUSE-016-121,CONTRACT-016,VEN-016,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,35,NOTICE,False,vec-CLAUSE-016-121
+CLAUSE-016-142,CONTRACT-016,VEN-016,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,27,CHANGE_ORDER,False,vec-CLAUSE-016-142
+CLAUSE-017-81,CONTRACT-017,VEN-017,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,42,DELIVERY,False,vec-CLAUSE-017-81
+CLAUSE-017-84,CONTRACT-017,VEN-017,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",32,PENALTY,True,vec-CLAUSE-017-84
+CLAUSE-017-92,CONTRACT-017,VEN-017,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,40,QUANTITY,False,vec-CLAUSE-017-92
+CLAUSE-017-103,CONTRACT-017,VEN-017,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,22,QUALITY,False,vec-CLAUSE-017-103
+CLAUSE-017-121,CONTRACT-017,VEN-017,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,48,NOTICE,False,vec-CLAUSE-017-121
+CLAUSE-017-142,CONTRACT-017,VEN-017,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,32,CHANGE_ORDER,False,vec-CLAUSE-017-142
+CLAUSE-018-81,CONTRACT-018,VEN-018,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,45,DELIVERY,False,vec-CLAUSE-018-81
+CLAUSE-018-84,CONTRACT-018,VEN-018,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",23,PENALTY,True,vec-CLAUSE-018-84
+CLAUSE-018-92,CONTRACT-018,VEN-018,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,50,QUANTITY,False,vec-CLAUSE-018-92
+CLAUSE-018-103,CONTRACT-018,VEN-018,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,37,QUALITY,False,vec-CLAUSE-018-103
+CLAUSE-018-121,CONTRACT-018,VEN-018,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,58,NOTICE,False,vec-CLAUSE-018-121
+CLAUSE-018-142,CONTRACT-018,VEN-018,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,8,CHANGE_ORDER,False,vec-CLAUSE-018-142
+CLAUSE-019-81,CONTRACT-019,VEN-019,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,59,DELIVERY,False,vec-CLAUSE-019-81
+CLAUSE-019-84,CONTRACT-019,VEN-019,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",11,PENALTY,True,vec-CLAUSE-019-84
+CLAUSE-019-92,CONTRACT-019,VEN-019,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,50,QUANTITY,False,vec-CLAUSE-019-92
+CLAUSE-019-103,CONTRACT-019,VEN-019,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,36,QUALITY,False,vec-CLAUSE-019-103
+CLAUSE-019-121,CONTRACT-019,VEN-019,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,6,NOTICE,False,vec-CLAUSE-019-121
+CLAUSE-019-142,CONTRACT-019,VEN-019,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,9,CHANGE_ORDER,False,vec-CLAUSE-019-142
+CLAUSE-020-81,CONTRACT-020,VEN-020,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,14,DELIVERY,False,vec-CLAUSE-020-81
+CLAUSE-020-84,CONTRACT-020,VEN-020,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",59,PENALTY,True,vec-CLAUSE-020-84
+CLAUSE-020-92,CONTRACT-020,VEN-020,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,31,QUANTITY,False,vec-CLAUSE-020-92
+CLAUSE-020-103,CONTRACT-020,VEN-020,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,16,QUALITY,False,vec-CLAUSE-020-103
+CLAUSE-020-121,CONTRACT-020,VEN-020,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,52,NOTICE,False,vec-CLAUSE-020-121
+CLAUSE-020-142,CONTRACT-020,VEN-020,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,47,CHANGE_ORDER,False,vec-CLAUSE-020-142
+CLAUSE-021-81,CONTRACT-021,VEN-021,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,53,DELIVERY,False,vec-CLAUSE-021-81
+CLAUSE-021-84,CONTRACT-021,VEN-021,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",24,PENALTY,True,vec-CLAUSE-021-84
+CLAUSE-021-92,CONTRACT-021,VEN-021,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,33,QUANTITY,False,vec-CLAUSE-021-92
+CLAUSE-021-103,CONTRACT-021,VEN-021,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,36,QUALITY,False,vec-CLAUSE-021-103
+CLAUSE-021-121,CONTRACT-021,VEN-021,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,50,NOTICE,False,vec-CLAUSE-021-121
+CLAUSE-021-142,CONTRACT-021,VEN-021,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,18,CHANGE_ORDER,False,vec-CLAUSE-021-142
+CLAUSE-022-81,CONTRACT-022,VEN-022,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,36,DELIVERY,False,vec-CLAUSE-022-81
+CLAUSE-022-84,CONTRACT-022,VEN-022,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",22,PENALTY,True,vec-CLAUSE-022-84
+CLAUSE-022-92,CONTRACT-022,VEN-022,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,16,QUANTITY,False,vec-CLAUSE-022-92
+CLAUSE-022-103,CONTRACT-022,VEN-022,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,53,QUALITY,False,vec-CLAUSE-022-103
+CLAUSE-022-121,CONTRACT-022,VEN-022,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,11,NOTICE,False,vec-CLAUSE-022-121
+CLAUSE-022-142,CONTRACT-022,VEN-022,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,24,CHANGE_ORDER,False,vec-CLAUSE-022-142
+CLAUSE-023-81,CONTRACT-023,VEN-023,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,37,DELIVERY,False,vec-CLAUSE-023-81
+CLAUSE-023-84,CONTRACT-023,VEN-023,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",5,PENALTY,True,vec-CLAUSE-023-84
+CLAUSE-023-92,CONTRACT-023,VEN-023,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,24,QUANTITY,False,vec-CLAUSE-023-92
+CLAUSE-023-103,CONTRACT-023,VEN-023,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,57,QUALITY,False,vec-CLAUSE-023-103
+CLAUSE-023-121,CONTRACT-023,VEN-023,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,46,NOTICE,False,vec-CLAUSE-023-121
+CLAUSE-023-142,CONTRACT-023,VEN-023,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,24,CHANGE_ORDER,False,vec-CLAUSE-023-142
+CLAUSE-024-81,CONTRACT-024,VEN-024,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,51,DELIVERY,False,vec-CLAUSE-024-81
+CLAUSE-024-84,CONTRACT-024,VEN-024,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",49,PENALTY,True,vec-CLAUSE-024-84
+CLAUSE-024-92,CONTRACT-024,VEN-024,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,52,QUANTITY,False,vec-CLAUSE-024-92
+CLAUSE-024-103,CONTRACT-024,VEN-024,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,51,QUALITY,False,vec-CLAUSE-024-103
+CLAUSE-024-121,CONTRACT-024,VEN-024,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,17,NOTICE,False,vec-CLAUSE-024-121
+CLAUSE-024-142,CONTRACT-024,VEN-024,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,18,CHANGE_ORDER,False,vec-CLAUSE-024-142
+CLAUSE-025-81,CONTRACT-025,VEN-025,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,21,DELIVERY,False,vec-CLAUSE-025-81
+CLAUSE-025-84,CONTRACT-025,VEN-025,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",21,PENALTY,True,vec-CLAUSE-025-84
+CLAUSE-025-92,CONTRACT-025,VEN-025,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,5,QUANTITY,False,vec-CLAUSE-025-92
+CLAUSE-025-103,CONTRACT-025,VEN-025,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,51,QUALITY,False,vec-CLAUSE-025-103
+CLAUSE-025-121,CONTRACT-025,VEN-025,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,30,NOTICE,False,vec-CLAUSE-025-121
+CLAUSE-025-142,CONTRACT-025,VEN-025,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,59,CHANGE_ORDER,False,vec-CLAUSE-025-142
+CLAUSE-026-81,CONTRACT-026,VEN-026,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,9,DELIVERY,False,vec-CLAUSE-026-81
+CLAUSE-026-84,CONTRACT-026,VEN-026,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",29,PENALTY,True,vec-CLAUSE-026-84
+CLAUSE-026-92,CONTRACT-026,VEN-026,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,27,QUANTITY,False,vec-CLAUSE-026-92
+CLAUSE-026-103,CONTRACT-026,VEN-026,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,22,QUALITY,False,vec-CLAUSE-026-103
+CLAUSE-026-121,CONTRACT-026,VEN-026,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,21,NOTICE,False,vec-CLAUSE-026-121
+CLAUSE-026-142,CONTRACT-026,VEN-026,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,34,CHANGE_ORDER,False,vec-CLAUSE-026-142
+CLAUSE-027-81,CONTRACT-027,VEN-027,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,45,DELIVERY,False,vec-CLAUSE-027-81
+CLAUSE-027-84,CONTRACT-027,VEN-027,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",24,PENALTY,True,vec-CLAUSE-027-84
+CLAUSE-027-92,CONTRACT-027,VEN-027,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,39,QUANTITY,False,vec-CLAUSE-027-92
+CLAUSE-027-103,CONTRACT-027,VEN-027,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,48,QUALITY,False,vec-CLAUSE-027-103
+CLAUSE-027-121,CONTRACT-027,VEN-027,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,51,NOTICE,False,vec-CLAUSE-027-121
+CLAUSE-027-142,CONTRACT-027,VEN-027,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,52,CHANGE_ORDER,False,vec-CLAUSE-027-142
+CLAUSE-028-81,CONTRACT-028,VEN-028,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,45,DELIVERY,False,vec-CLAUSE-028-81
+CLAUSE-028-84,CONTRACT-028,VEN-028,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",47,PENALTY,True,vec-CLAUSE-028-84
+CLAUSE-028-92,CONTRACT-028,VEN-028,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,22,QUANTITY,False,vec-CLAUSE-028-92
+CLAUSE-028-103,CONTRACT-028,VEN-028,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,19,QUALITY,False,vec-CLAUSE-028-103
+CLAUSE-028-121,CONTRACT-028,VEN-028,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,21,NOTICE,False,vec-CLAUSE-028-121
+CLAUSE-028-142,CONTRACT-028,VEN-028,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,58,CHANGE_ORDER,False,vec-CLAUSE-028-142
+CLAUSE-029-81,CONTRACT-029,VEN-029,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,8,DELIVERY,False,vec-CLAUSE-029-81
+CLAUSE-029-84,CONTRACT-029,VEN-029,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",47,PENALTY,True,vec-CLAUSE-029-84
+CLAUSE-029-92,CONTRACT-029,VEN-029,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,57,QUANTITY,False,vec-CLAUSE-029-92
+CLAUSE-029-103,CONTRACT-029,VEN-029,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,28,QUALITY,False,vec-CLAUSE-029-103
+CLAUSE-029-121,CONTRACT-029,VEN-029,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,39,NOTICE,False,vec-CLAUSE-029-121
+CLAUSE-029-142,CONTRACT-029,VEN-029,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,55,CHANGE_ORDER,False,vec-CLAUSE-029-142
+CLAUSE-030-81,CONTRACT-030,VEN-030,8,8.1,Delivery Schedule,Supplier shall deliver materials according to the agreed delivery schedule.,50,DELIVERY,False,vec-CLAUSE-030-81
+CLAUSE-030-84,CONTRACT-030,VEN-030,8,8.4,Delay and Liquidated Damages,"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.",41,PENALTY,True,vec-CLAUSE-030-84
+CLAUSE-030-92,CONTRACT-030,VEN-030,9,9.2,Material Quantity,Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.,12,QUANTITY,False,vec-CLAUSE-030-92
+CLAUSE-030-103,CONTRACT-030,VEN-030,10,10.3,Quality Acceptance,Materials failing inspection may be rejected and replaced by the supplier.,33,QUALITY,False,vec-CLAUSE-030-103
+CLAUSE-030-121,CONTRACT-030,VEN-030,12,12.1,Notice of Delay,The supplier shall notify the client promptly of circumstances likely to affect delivery.,28,NOTICE,False,vec-CLAUSE-030-121
+CLAUSE-030-142,CONTRACT-030,VEN-030,14,14.2,Change Orders,Changes in scope or quantities shall be handled through an approved change order process.,9,CHANGE_ORDER,False,vec-CLAUSE-030-142

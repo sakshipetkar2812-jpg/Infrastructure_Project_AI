@@ -1,0 +1,19 @@
+table,field,meaning,consumer
+projects,project_id,Primary project identifier,All agents
+activities,activity_id,Primary activity identifier,"Variance Engine, Schedule Agent"
+dependencies,predecessor_activity_id/successor_activity_id,Activity graph relationship,Schedule Agent
+milestones,milestone_id,Project milestone,Schedule Agent
+boq,planned_quantity,Planned material requirement,Procurement Agent
+material_consumption,quantity_consumed/remaining_quantity_required,Actual material usage,Procurement Agent
+purchase_orders,promised_delivery_date/actual_delivery_date,Supplier delivery evidence,Procurement Agent
+goods_receipts,received_quantity/accepted_quantity,Physical receipt evidence,Procurement Agent
+inventory,closing_stock/reserved_quantity,Material availability,Procurement Agent
+vendors,historical_risk_score,Supplier performance summary,Procurement/Contractor
+contractors,historical_risk_score,Contractor performance summary,Contractor Agent
+labor_assignments,deployed_headcount/productivity_rate,Labor availability and productivity,Contractor Agent
+cost_ledger,cost_type/amount,Actual financial events,Cost Agent
+investigations,root_cause/recommended_action,Ground-truth investigation outcomes,Synthesis/Feedback
+contracts,document_path,Contract source document,Contract Agent
+contract_clauses,clause_text/clause_number,Clause-level RAG evidence,Contract Agent
+cost_reconciliation,predicted_cost/actual_cost,Prediction calibration,Cost Reconciliation
+action_log,approval_status/selected action,Human decision record,Feedback Loop

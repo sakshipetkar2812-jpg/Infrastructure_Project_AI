@@ -1,0 +1,20 @@
+CONTRACT CONTRACT-008
+Vendor: VEN-008
+
+Clause 8.1: Delivery Schedule
+Supplier shall deliver materials according to the agreed delivery schedule.
+
+Clause 8.4: Delay and Liquidated Damages
+Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period.
+
+Clause 9.2: Material Quantity
+Supplier shall provide the quantities stated in the purchase order and approved bill of quantities.
+
+Clause 10.3: Quality Acceptance
+Materials failing inspection may be rejected and replaced by the supplier.
+
+Clause 12.1: Notice of Delay
+The supplier shall notify the client promptly of circumstances likely to affect delivery.
+
+Clause 14.2: Change Orders
+Changes in scope or quantities shall be handled through an approved change order process.
