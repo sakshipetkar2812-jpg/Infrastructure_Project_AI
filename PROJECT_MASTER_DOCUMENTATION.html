@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Master Project Documentation & Interview Handbook</title>
+<style>
+    @page {
+        size: A4;
+        margin: 18mm 16mm 18mm 16mm;
+        @bottom-right {
+            content: "Page " counter(page) " of " counter(pages);
+            font-size: 8.5pt;
+            color: #64748b;
+        }
+    }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1e293b;
+        line-height: 1.5;
+        font-size: 10pt;
+        background: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+    .header-banner {
+        border-bottom: 3px solid #1e3a8a;
+        padding-bottom: 14px;
+        margin-bottom: 20px;
+    }
+    .project-pill {
+        display: inline-block;
+        background: #dbeafe;
+        color: #1e40af;
+        font-weight: 700;
+        font-size: 8pt;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 3px 8px;
+        border-radius: 4px;
+        margin-bottom: 6px;
+    }
+    h1 {
+        font-size: 20pt;
+        color: #0f172a;
+        margin: 0 0 6px 0;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+    .subtitle {
+        font-size: 11pt;
+        color: #475569;
+        margin: 0;
+    }
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 10px 12px;
+        margin: 14px 0 20px 0;
+        font-size: 8.5pt;
+    }
+    .stats-card strong {
+        display: block;
+        color: #64748b;
+        font-size: 7.5pt;
+        text-transform: uppercase;
+    }
+    .stats-card span {
+        color: #0f172a;
+        font-size: 10pt;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 13pt;
+        color: #1e3a8a;
+        border-bottom: 1.5px solid #e2e8f0;
+        padding-bottom: 4px;
+        margin-top: 22px;
+        margin-bottom: 10px;
+        page-break-after: avoid;
+    }
+    h3 {
+        font-size: 10.5pt;
+        color: #0f172a;
+        margin-top: 14px;
+        margin-bottom: 6px;
+        page-break-after: avoid;
+    }
+    p {
+        margin: 0 0 8px 0;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0 16px 0;
+        font-size: 8.5pt;
+        page-break-inside: avoid;
+    }
+    th, td {
+        border: 1px solid #cbd5e1;
+        padding: 6px 8px;
+        text-align: left;
+        vertical-align: top;
+    }
+    th {
+        background: #f1f5f9;
+        color: #0f172a;
+        font-weight: 700;
+    }
+    tr:nth-child(even) td {
+        background: #f8fafc;
+    }
+    .callout {
+        border-left: 4px solid #2563eb;
+        background: #eff6ff;
+        padding: 10px 12px;
+        margin: 12px 0;
+        border-radius: 0 6px 6px 0;
+        font-size: 9pt;
+        page-break-inside: avoid;
+    }
+    .callout-title {
+        font-weight: 700;
+        color: #1d4ed8;
+        margin-bottom: 4px;
+    }
+    .callout-interview {
+        border-left-color: #059669;
+        background: #ecfdf5;
+    }
+    .callout-interview .callout-title {
+        color: #047857;
+    }
+    .callout-warning {
+        border-left-color: #d97706;
+        background: #fffbeb;
+    }
+    .callout-warning .callout-title {
+        color: #b45309;
+    }
+    code {
+        font-family: "Consolas", "Courier New", monospace;
+        background: #f1f5f9;
+        color: #0f172a;
+        padding: 1px 4px;
+        border-radius: 3px;
+        font-size: 8.5pt;
+    }
+    pre {
+        background: #0f172a;
+        color: #f8fafc;
+        padding: 8px 12px;
+        border-radius: 5px;
+        font-family: "Consolas", monospace;
+        font-size: 8pt;
+        line-height: 1.4;
+        overflow-x: auto;
+        margin: 8px 0 12px 0;
+        page-break-inside: avoid;
+    }
+    .page-break {
+        page-break-before: always;
+    }
+    ul, ol {
+        margin: 0 0 10px 0;
+        padding-left: 20px;
+    }
+    li {
+        margin-bottom: 3px;
+    }
+    .qa-box {
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 10px 12px;
+        margin-bottom: 12px;
+        background: #ffffff;
+        page-break-inside: avoid;
+    }
+    .qa-question {
+        font-weight: 700;
+        color: #1e3a8a;
+        font-size: 9.5pt;
+        margin-bottom: 4px;
+    }
+    .qa-answer {
+        color: #334155;
+        font-size: 9pt;
+    }
+    .tag {
+        display: inline-block;
+        font-size: 7.5pt;
+        font-weight: 700;
+        padding: 1px 6px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        margin-right: 4px;
+    }
+    .tag-blue { background: #dbeafe; color: #1e40af; }
+    .tag-green { background: #dcfce7; color: #166534; }
+    .tag-purple { background: #f3e8ff; color: #6b21a8; }
+</style>
+</head>
+<body>
+
+<div class="header-banner">
+    <div class="project-pill">Master Project Documentation & Interview Portfolio Guide</div>
+    <h1>Infrastructure Project Delay & Cost Overrun Intelligence Agent</h1>
+    <div class="subtitle">Complete Technical Blueprint, Architecture, Mathematical Formulas & Interview Preparation</div>
+</div>
+
+<div class="stats-grid">
+    <div class="stats-card">
+        <strong>Dataset Scale</strong>
+        <span>100 Projects (12,633 Acts)</span>
+    </div>
+    <div class="stats-card">
+        <strong>Dependencies Tracked</strong>
+        <span>15,571 Logic Links</span>
+    </div>
+    <div class="stats-card">
+        <strong>Contract RAG Index</strong>
+        <span>30 Contracts / 180 Clauses</span>
+    </div>
+    <div class="stats-card">
+        <strong>Automated Tests</strong>
+        <span style="color:#16a34a;">15 / 15 Passing (2.90s)</span>
+    </div>
+</div>
+
+<h2>1. Executive Summary & The 60-Second Elevator Pitch</h2>
+<p>
+    This project is an end-to-end, multi-agent AI decision-support platform designed to solve the critical problem of schedule slippage, supply bottlenecks, and budget inflation across large-scale infrastructure capital programs (highways, bridges, rail networks, airports).
+</p>
+
+<div class="callout callout-interview">
+    <div class="callout-title">The 60-Second Interview Pitch (Memorize This!)</div>
+    <em>"Large infrastructure projects routinely suffer from catastrophic delays and cost overruns because project telemetry is deeply fragmented across isolated systems: scheduling in Primavera P6, materials in ERPs, site labor on daily logs, finances in accounting ledgers, and legal rights locked in contracts.<br><br>
+    I built the <strong>Infrastructure Project Delay & Cost Overrun Intelligence Agent</strong> to bridge these silos. Operating on real telemetry across 100 projects and 12,600+ activities, the system detects delays, traces Critical Path propagation, identifies operational root causes (such as warehouse stockouts or contractor labor productivity deficits), calculates financial exposure, retrieves exact contract penalty clauses via local RAG, and recommends prioritized interventions through an interactive 11-tab Streamlit dashboard."</em>
+</div>
+
+<h2>2. The Business Problem in Mega-Infrastructure</h2>
+<p>
+    In construction programs costing hundreds of crores, project managers often discover delays only <strong>after a milestone has already been missed</strong>. The fundamental issue is not simply that activities take longer than planned; it is that leadership lacks a unified, cross-domain forensic view:
+</p>
+<ul>
+    <li><strong>The Schedule Disconnect:</strong> A schedule shows a 20-day slip, but does not indicate whether it affects the <em>Critical Path</em> (delaying the whole project) or whether buffer float absorbs the delay.</li>
+    <li><strong>The Root-Cause Disconnect:</strong> Traditional tools cannot cross-reference whether an excavation delay was caused by adverse weather, a contractor under-deploying laborers, or a vendor delivering defective steel.</li>
+    <li><strong>The Commercial Disconnect:</strong> When a supplier delivers 3 weeks late, project managers rarely have instant access to the governing contract clause (e.g. <em>Clause 8.4 Liquidated Damages</em>) to seek financial recovery before warranties expire.</li>
+</ul>
+
+<h2>3. Complete Data Inventory & Schemas</h2>
+<p>
+    The system operates on 14 empirical datasets covering 100 construction projects (<code>PRJ-0001</code> through <code>PRJ-0100</code>) with a master reporting cutoff date of <strong>August 20, 2026 (<code>2026-08-20</code>)</strong>:
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Dataset / File</th>
+            <th>Records</th>
+            <th>Primary Keys / Relationships</th>
+            <th>System Role & Consumer</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>activities.csv</code></td>
+            <td>12,633 rows</td>
+            <td>PK: <code>activity_id</code>, FK: <code>project_id</code></td>
+            <td>Baseline and actual dates, progress %, planned vs. actual duration, total float, critical path tags.</td>
+        </tr>
+        <tr>
+            <td><code>dependencies.csv</code></td>
+            <td>15,571 rows</td>
+            <td>FK: <code>predecessor_activity_id</code>, <code>successor_activity_id</code></td>
+            <td>Finish-to-Start (FS), SS, FF relationships with lag days for critical path network modeling.</td>
+        </tr>
+        <tr>
+            <td><code>boq.csv</code></td>
+            <td>15,166 rows</td>
+            <td>PK: <code>boq_id</code>, FK: <code>activity_id</code>, <code>material_id</code></td>
+            <td>Bill of Quantities: planned material quantities, unit rates, and budgeted costs across 12 materials.</td>
+        </tr>
+        <tr>
+            <td><code>material_consumption.csv</code></td>
+            <td>15,166 rows</td>
+            <td>PK: <code>consumption_id</code>, FK: <code>activity_id</code>, <code>material_id</code></td>
+            <td>Actual material quantities consumed on site and remaining requirements.</td>
+        </tr>
+        <tr>
+            <td><code>materials.csv</code></td>
+            <td>12 rows</td>
+            <td>PK: <code>material_id</code></td>
+            <td>Master catalog: standard unit costs, criticality ratings (High/Med/Low), and standard lead times.</td>
+        </tr>
+        <tr>
+            <td><code>goods_receipts.csv</code></td>
+            <td>5,427 rows</td>
+            <td>PK: <code>grn_id</code>, FK: <code>material_id</code>, <code>vendor_id</code></td>
+            <td>Physical shipment deliveries, accepted quantities, rejected quantities, and inspection status.</td>
+        </tr>
+        <tr>
+            <td><code>inventory.csv</code></td>
+            <td>1,200 rows</td>
+            <td>PK: <code>inventory_id</code>, FK: <code>material_id</code>, <code>project_id</code></td>
+            <td>Warehouse opening stock, received, consumed, closing stock, and reserved stock.</td>
+        </tr>
+        <tr>
+            <td><code>contractors.csv</code></td>
+            <td>20 rows</td>
+            <td>PK: <code>contractor_id</code></td>
+            <td>Contractor master records: historical delay days, cost overrun %, and risk score benchmarks.</td>
+        </tr>
+        <tr>
+            <td><code>labor_assignments.csv</code></td>
+            <td>6,292 rows</td>
+            <td>PK: <code>labor_id</code>, FK: <code>activity_id</code>, <code>contractor_id</code></td>
+            <td>Daily crew sizes, trades, daily wage rates, and measured site productivity rates.</td>
+        </tr>
+        <tr>
+            <td><code>cost_ledger.csv</code></td>
+            <td>17,839 rows</td>
+            <td>PK: <code>ledger_id</code>, FK: <code>activity_id</code>, <code>vendor_id</code></td>
+            <td>Financial transaction ledger by cost code: Labor, Equipment, Material, Subcontractor.</td>
+        </tr>
+        <tr>
+            <td><code>contracts.csv</code> & 30 Raw TXT</td>
+            <td>30 files</td>
+            <td>PK: <code>contract_id</code>, FK: <code>vendor_id</code></td>
+            <td>Full-text contract agreements (<code>CONTRACT-001.txt</code> to <code>CONTRACT-030.txt</code>) for RAG search.</td>
+        </tr>
+        <tr>
+            <td><code>contract_clauses.csv</code></td>
+            <td>180 rows</td>
+            <td>PK: <code>clause_id</code>, FK: <code>contract_id</code></td>
+            <td>Structured clauses for delivery terms, warranty periods, change orders, and delay penalties.</td>
+        </tr>
+        <tr>
+            <td><code>cost_reconciliation.csv</code></td>
+            <td>100 rows</td>
+            <td>PK: <code>reconciliation_id</code>, FK: <code>project_id</code></td>
+            <td>Ground-truth prediction calibration history comparing predicted cost impact to actual cost.</td>
+        </tr>
+        <tr>
+            <td><code>Road Constuction Delay Survey.csv</code></td>
+            <td>144 rows</td>
+            <td>51 columns</td>
+            <td>Empirical industry survey evaluating 44 construction delay causes across clients and contractors.</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h2>4. Data Engineering, Preprocessing & Quality Assurance</h2>
+<p>
+    Production-grade AI systems depend entirely on data integrity. The ingestion layer (<code>src/data_processing/</code>) enforces strict rules:
+</p>
+
+<h3>4.1 Encoding Resilience (Handling Real-World Corruptions)</h3>
+<p>
+    Real-world construction CSVs contain non-standard character encodings. For example, <code>Road Constuction Delay Survey.csv</code> contained Windows CP1252 directional quotation marks (byte <code>0x92</code>) that instantly crash standard UTF-8 readers with a <code>UnicodeDecodeError</code>. We built an automated fallback parser in <code>loader.py</code>:
+</p>
+<pre>
+# Safe Multi-Encoding Loader Pipeline
+def _read_csv_safe(self, fpath: Path, **kwargs) -> pd.DataFrame:
+    try:
+        return pd.read_csv(fpath, encoding="utf-8", **kwargs)
+    except UnicodeDecodeError:
+        try:
+            return pd.read_csv(fpath, encoding="cp1252", **kwargs)
+        except Exception:
+            return pd.read_csv(fpath, encoding="latin-1", **kwargs)
+</pre>
+
+<h3>4.2 Automated Data Quality Auditor (98.0 / 100 Health Score)</h3>
+<p>
+    Before running any business logic, <code>DataQualityChecker</code> (<code>quality.py</code>) conducts an automated five-point audit:
+</p>
+<ol>
+    <li><strong>Referential Integrity:</strong> 100% of foreign keys in <code>labor_assignments</code>, <code>cost_ledger</code>, and <code>boq</code> cleanly map to valid parent activity IDs in <code>activities.csv</code> (zero orphan records).</li>
+    <li><strong>Date Sanity:</strong> Validates that planned finishes occur after planned starts, and completed tasks have actual finishes after actual starts.</li>
+    <li><strong>Financial Sanity:</strong> Asserts non-negativity across baseline costs, actual costs, and ledger entries.</li>
+    <li><strong>Missing Finish Date Logic:</strong> Confirms that 64.9% missing actual finishes are <em>expected behavior</em> representing in-progress or not-started activities evaluated against the cutoff date, rather than data corruption.</li>
+    <li><strong>Out-of-Scope File Exclusion:</strong> Identified that <code>Phase-3 tracker.xlsx</code> was an unrelated IT CRM file ("DeepHealth Gleamer-to-Nova Salesforce migration") and safely excluded it to prevent data pollution.</li>
+</ol>
+
+<h2>5. Deterministic Analytics Engines & Mathematical Formulas</h2>
+<div class="callout">
+    <div class="callout-title">Architectural Rule of Truth</div>
+    <strong>Never use a Large Language Model for deterministic arithmetic.</strong><br>
+    All dates, float, durations, burn rates, and variance metrics are calculated using pure, deterministic Python code (Pandas/NumPy). The AI/RAG layer is reserved strictly for language understanding and evidence synthesis.
+</div>
+
+<h3>5.1 Schedule & Critical Path Engine (<code>schedule_engine.py</code>)</h3>
+<ul>
+    <li><strong>Completed Activity Delay:</strong>
+        $$\text{Finish Delay (Days)} = \text{Actual Finish Date} - \text{Planned Finish Date}$$
+        <em>(Positive = Delayed; Negative/Zero = On-Time or Ahead of Schedule)</em>
+    </li>
+    <li><strong>In-Progress Overdue Delay (Cutoff Date = August 20, 2026):</strong>
+        $$\text{Overdue Days} = \text{Cutoff Date} - \text{Planned Finish Date} \quad (\text{if } \text{Planned Finish} < \text{Cutoff Date})$$
+    </li>
+    <li><strong>Critical Path Impact Alert:</strong>
+        $$\text{Critical Path Impact} = (\text{Total Float} \le 0 \lor \text{is\_critical} = \text{True}) \land (\text{Delay Days} > 0)$$
+        When triggered, the engine recursively queries <code>dependencies.csv</code> to identify downstream successor activities whose start dates are compromised.
+    </li>
+</ul>
+
+<h3>5.2 Procurement & Material Shortage Engine (<code>procurement_engine.py</code>)</h3>
+<ul>
+    <li><strong>Warehouse Stockout Deficit:</strong>
+        $$\text{Deficit Units} = \text{Reserved Quantity} - \text{Closing Stock} \quad (\text{when } \text{Closing Stock} < \text{Reserved Quantity})$$
+    </li>
+    <li><strong>Supplier Shipment Defect Rate:</strong>
+        $$\text{Defect Rate (\%)} = \frac{\text{Rejected Quantity}}{\text{Received Quantity}} \times 100$$
+        Shipments with defect rates $> 5.0\%$ or quality status $\ne \text{'ACCEPTED'}$ trigger a material quality alert.
+    </li>
+</ul>
+
+<h3>5.3 Cost Variance & Daily Burn Rate Engine (<code>cost_engine.py</code>)</h3>
+<ul>
+    <li><strong>Cost Variance (CV):</strong> $\text{Cost Variance} = \text{Actual Cost} - \text{Baseline Cost}$</li>
+    <li><strong>Daily Actual Burn Rate:</strong>
+        $$\text{Daily Burn Rate} = \frac{\text{Actual Cost}}{\max(1, \text{Actual Duration Days})}$$
+    </li>
+    <li><strong>Potential Delay Financial Exposure:</strong>
+        $$\text{Delay Exposure} = \text{Delay Days} \times \text{Daily Burn Rate}$$
+        Calculates ongoing site holding costs (equipment rentals, idling labor, overheads) during the delay window.
+    </li>
+</ul>
+
+<h3>5.4 Contractor Labor Productivity Engine (<code>contractor_engine.py</code>)</h3>
+<ul>
+    <li><strong>Required Productivity Pace:</strong>
+        $$\text{Required Rate} = \frac{\text{Remaining Work Quantity}}{\text{Days to Deadline}}$$
+    </li>
+    <li><strong>Productivity Deficit:</strong>
+        $$\text{Productivity Deficit} = \text{Required Rate} - \text{Actual Measured Rate}$$
+        A positive deficit indicates the contractor's current crew is mathematically incapable of hitting the deadline without additional resources.
+    </li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2>6. Legal RAG Document Intelligence Engine</h2>
+<p>
+    When an infrastructure milestone slips, commercial teams need to know their legal standing. We engineered a 100% local <strong>Retrieval-Augmented Generation (RAG)</strong> engine (<code>src/rag/contract_rag.py</code>):
+</p>
+
+<h3>6.1 Architecture & Local Vector Indexing</h3>
+<ul>
+    <li><strong>Corpus:</strong> 180 structured clauses from <code>contract_clauses.csv</code> combined with 30 raw text contracts (<code>CONTRACT-001.txt</code> to <code>CONTRACT-030.txt</code>) chunked by clause section headers.</li>
+    <li><strong>Embedding / Vectorization:</strong> Uses **TF-IDF with unigram and bigram tokenization** and **Cosine Similarity**:
+        $$\cos(\theta) = \frac{\mathbf{q} \cdot \mathbf{d}}{\|\mathbf{q}\| \|\mathbf{d}\|}$$
+    </li>
+    <li><strong>Zero Cloud Latency & Zero Cost:</strong> Runs completely offline in memory, eliminating expensive cloud API tokens, rate limits, and private contract data leaks.</li>
+    <li><strong>Anti-Hallucination Guardrail:</strong> Implements a hard relevance threshold ($\text{Score} \ge 0.20$). If a user asks about non-existent topics (e.g. software licenses), the engine immediately returns <em>"Insufficient data: No relevant contractual clauses found"</em> rather than hallucinating terms.</li>
+</ul>
+
+<h3>6.2 Verifiable Legal Clause Grounding (Clause 8.4)</h3>
+<p>
+    When a supplier delivery delay occurs, the RAG engine retrieves <strong>Clause 8.4 (Delay and Liquidated Damages)</strong>:
+</p>
+<div class="callout">
+    <div class="callout-title">Retrieved Verbatim Evidence: CONTRACT-001, Clause 8.4</div>
+    <em>"Where delay is attributable to the supplier, contractual delay remedies may apply after the contractual grace period."</em><br>
+    <strong>Applicability:</strong> Liquidated damages remedies active. Cites contract ID, page number, and section.
+</div>
+
+<h2>7. Multi-Agent Architecture & Risk Supervisor</h2>
+<p>
+    Rather than a brittle monolithic script, the system uses a decoupled multi-agent architecture (<code>src/agents/</code>):
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Agent Name</th>
+            <th>Specialized Role</th>
+            <th>Primary Telemetry Inputs</th>
+            <th>Output Format</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Schedule Agent</strong></td>
+            <td>CPM float, overdue days, milestone slippage, successor network impacts.</td>
+            <td><code>activities.csv</code>, <code>dependencies.csv</code></td>
+            <td>JSON: delay days, critical path flag, impacted successors.</td>
+        </tr>
+        <tr>
+            <td><strong>Procurement Agent</strong></td>
+            <td>BOQ demands, warehouse stock deficits, vendor delivery defect rates.</td>
+            <td><code>boq</code>, <code>consumption</code>, <code>inventory</code>, <code>receipts</code></td>
+            <td>JSON: stockout status, defect %, vendor IDs.</td>
+        </tr>
+        <tr>
+            <td><strong>Cost Agent</strong></td>
+            <td>Budget variance, ledger breakdown by category, daily burn rate.</td>
+            <td><code>cost_ledger.csv</code>, <code>cost_reconciliation.csv</code></td>
+            <td>JSON: variance %, burn rate, calibrated MAE/MAPE.</td>
+        </tr>
+        <tr>
+            <td><strong>Contractor Agent</strong></td>
+            <td>Crew deployment, daily wages, required vs. actual productivity pace.</td>
+            <td><code>contractors.csv</code>, <code>labor_assignments.csv</code></td>
+            <td>JSON: productivity deficit, historical risk score.</td>
+        </tr>
+        <tr>
+            <td><strong>Contract Agent</strong></td>
+            <td>Semantic RAG search over contracts for delivery terms and liquidated damages.</td>
+            <td>30 Contract TXTs, 180 clauses</td>
+            <td>JSON: verbatim clause citations, penalty applicability.</td>
+        </tr>
+        <tr>
+            <td><strong>Project Risk Supervisor</strong></td>
+            <td>Master orchestrator: detects conflicts, synthesizes root cause, generates briefing.</td>
+            <td>All 5 specialist agents</td>
+            <td>Executive investigation report with confidence score.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>7.1 Conflict Resolution Logic (Supervisor)</h3>
+<p>
+    The Supervisor acts as the chief arbiter. For example:
+</p>
+<ul>
+    <li><strong>Discrepancy 1 (Cost vs. Schedule):</strong> If an activity has <code>delay_days = 0</code> but exhibits a high cost overrun, the Supervisor resolves that the overrun is driven by unit rate inflation or equipment intensity rather than schedule slippage.</li>
+    <li><strong>Discrepancy 2 (Procurement vs. Status):</strong> If warehouse stock is depleted but the activity is <code>COMPLETED</code>, the Supervisor determines the shortage threatens upcoming successor tasks rather than the finished activity.</li>
+</ul>
+
+<h2>8. Risk Classification & Predictive Forecasting Models</h2>
+<ul>
+    <li><strong>Multi-Factor Risk Scoring (0–100 Points):</strong>
+        Schedule Delay (up to 30 pts) + Critical Path Impact (up to 25 pts) + Material Shortages (up to 15 pts) + Labor Deficits (up to 15 pts) + Cost Variance (up to 15 pts).<br>
+        Classified into <strong>CRITICAL ($\ge 70$)</strong>, <strong>HIGH ($\ge 45$)</strong>, <strong>MEDIUM ($\ge 25$)</strong>, and <strong>LOW ($< 25$)</strong>.
+    </li>
+    <li><strong>Earned Value Extrapolation (SPI / CPI):</strong> For activities with $> 5\%$ progress, forecasts total completion duration and final cost using Schedule Performance Index ($SPI = \text{Actual Progress} / \text{Planned Progress}$) and Cost Performance Index ($CPI$).</li>
+    <li><strong>Machine Learning Baseline Classifier:</strong> Implemented a Scikit-learn Logistic Regression baseline model in <code>risk_engine.py</code> trained on completed historical activities to predict whether an activity will suffer delay $> 5$ days based on baseline duration, cost, and float.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2>9. Interactive Streamlit Dashboard (11 Dedicated Tabs)</h2>
+<p>
+    The web dashboard (<code>dashboard/app.py</code>) provides an intuitive, executive-grade monitoring interface:
+</p>
+<ul>
+    <li><strong>Tab 1: 📊 Overview:</strong> Executive scorecard showing total activities, delayed activities count, critical path delay count, net cost variance, and Plotly status distribution pie charts.</li>
+    <li><strong>Tab 2: 📅 Schedule:</strong> Planned duration vs. delay scatter plots, overdue activities list, and delayed milestones.</li>
+    <li><strong>Tab 3: ⚠️ High-Risk:</strong> Multi-factor risk radar with dynamic priority queues (Critical, High, Medium, Low).</li>
+    <li><strong>Tab 4: 📦 Procurement:</strong> Goods receipts acceptance rates, rejected shipment counts, and warehouse inventory stock deficits.</li>
+    <li><strong>Tab 5: 👷 Contractors:</strong> Contractor risk benchmark scatter matrix and daily crew wage metrics.</li>
+    <li><strong>Tab 6: 💰 Cost Variance:</strong> Baseline budget vs. actual spend, expenditures by ledger category (Labor, Equipment, Materials), and reconciliation accuracy.</li>
+    <li><strong>Tab 7: 🔍 Root Cause:</strong> Forensic activity investigator correlating schedule delays with warehouse stockouts, labor deficits, and predecessor slippages.</li>
+    <li><strong>Tab 8: 📜 Contract RAG:</strong> Semantic contract clause search engine with verbatim excerpts and penalty indicators.</li>
+    <li><strong>Tab 9: 💬 AI Assistant:</strong> Conversational chat assistant answering factual questions backed by database queries and RAG retrieval.</li>
+    <li><strong>Tab 10: 🎯 Actions & Recs:</strong> Prioritized corrective actions with implementation risks, expected benefits, and **Human-in-the-Loop Approval** requirements.</li>
+    <li><strong>Tab 11: 📋 Data Quality:</strong> Automated 98/100 data health report, schema audit, and referential integrity verification.</li>
+</ul>
+
+<h2>10. Automated Testing Architecture (Pytest Suite)</h2>
+<p>
+    All 15 acceptance test scenarios (plus a dashboard smoke test) are implemented in <code>tests/test_intelligence_agent.py</code> and execute in <strong>2.90 seconds</strong>:
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Test Function</th>
+            <th>Category</th>
+            <th>What It Verifies</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td><code>test_date_parsing_and_missing_dates</code></td><td>Data Engine</td><td>ISO date parsing and non-destructive handling of empty actual finish dates.</td><td>PASSED</td></tr>
+        <tr><td>2</td><td><code>test_completed_activity_delay</code></td><td>Schedule</td><td>Deterministic finish delay calculation (<code>actual_finish - planned_finish</code>).</td><td>PASSED</td></tr>
+        <tr><td>3</td><td><code>test_incomplete_overdue_activity</code></td><td>Schedule</td><td>Overdue days calculation against the August 20, 2026 cutoff date.</td><td>PASSED</td></tr>
+        <tr><td>4</td><td><code>test_zero_and_negative_delay</code></td><td>Schedule</td><td>Activities finishing early (negative delay) or on-time (zero delay).</td><td>PASSED</td></tr>
+        <tr><td>5</td><td><code>test_cost_variance_calculation</code></td><td>Cost Engine</td><td>Budget variance and ongoing daily delay burn rate exposure.</td><td>PASSED</td></tr>
+        <tr><td>6</td><td><code>test_missing_budget_information</code></td><td>Edge Case</td><td>Guards against division-by-zero errors when baseline cost is 0.0.</td><td>PASSED</td></tr>
+        <tr><td>7</td><td><code>test_unmatched_procurement_records</code></td><td>Procurement</td><td>Graceful handling when an activity has no material requirements in BOQ.</td><td>PASSED</td></tr>
+        <tr><td>8</td><td><code>test_supplier_performance_calculation</code></td><td>Procurement</td><td>Vendor acceptance rates, rejected quantities, and warehouse stock deficits.</td><td>PASSED</td></tr>
+        <tr><td>9</td><td><code>test_rag_evidence_retrieval</code></td><td>RAG</td><td>Vector indexing and verbatim retrieval of Clause 8.4 Liquidated Damages.</td><td>PASSED</td></tr>
+        <tr><td>10</td><td><code>test_unsupported_contract_questions</code></td><td>RAG</td><td>Anti-hallucination guard returning <em>"Insufficient data"</em> for out-of-domain queries.</td><td>PASSED</td></tr>
+        <tr><td>11</td><td><code>test_supervisor_conflict_resolution</code></td><td>Supervisor</td><td>Resolves discrepancies (e.g. cost overrun with zero schedule delay).</td><td>PASSED</td></tr>
+        <tr><td>12</td><td><code>test_local_fallback_without_api_credentials</code></td><td>Resilience</td><td>Validates 100% offline functionality without API keys or cloud dependencies.</td><td>PASSED</td></tr>
+        <tr><td>13</td><td><code>test_empty_datasets_handling</code></td><td>Resilience</td><td>Ensures graceful degradation and audit penalties on empty DataFrames.</td><td>PASSED</td></tr>
+        <tr><td>14</td><td><code>test_integration_on_actual_workspace_data</code></td><td>Integration</td><td>End-to-end integration over 12,633 real activities and 15,571 dependencies.</td><td>PASSED</td></tr>
+        <tr><td>15</td><td><code>test_dashboard_module_imports</code></td><td>Smoke Test</td><td>Bytecode syntax compilation of <code>dashboard/app.py</code> before web launch.</td><td>PASSED</td></tr>
+    </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h2>11. Top Technical Interview Questions & Word-for-Word Answers</h2>
+
+<div class="qa-box">
+    <div class="qa-question">Q1: "Did you use an LLM to calculate schedule delays and cost overruns?"</div>
+    <div class="qa-answer">
+        <strong>Model Answer:</strong> <em>"No, and that was a conscious, foundational architectural decision. In civil engineering and financial accounting, calculations must be 100% reproducible, auditable, and deterministic. LLMs are probabilistic models that can hallucinate figures and struggle with calendar arithmetic.<br><br>
+        Therefore, I built dedicated Python analytics engines using Pandas and NumPy for all date logic, Critical Path float, inventory deficits, and cost variance. I used AI and RAG strictly where language understanding is required—specifically semantic search over legal contracts, cross-domain conflict resolution, and natural-language executive briefings."</em>
+    </div>
+</div>
+
+<div class="qa-box">
+    <div class="qa-question">Q2: "What is the Critical Path Method (CPM), and why is it important in your system?"</div>
+    <div class="qa-answer">
+        <strong>Model Answer:</strong> <em>"The Critical Path is the longest sequence of dependent activities from project start to finish that dictates the minimum project duration. Activities on the critical path have a Total Float of zero, meaning they have zero buffer time.<br><br>
+        If a non-critical activity slips by 5 days, buffer float absorbs it without impacting the handover date. But if a critical path activity slips by even 1 day, the entire multi-crore program completion slips by 1 day. My Schedule Engine evaluates Total Float and traces downstream successor links in <code>dependencies.csv</code> to immediately alert leadership when a critical path activity is threatened."</em>
+    </div>
+</div>
+
+<div class="qa-box">
+    <div class="qa-question">Q3: "How does your RAG system work without using expensive cloud APIs like OpenAI?"</div>
+    <div class="qa-answer">
+        <strong>Model Answer:</strong> <em>"I built a local semantic retrieval engine using TF-IDF vectorization with unigram and bigram n-grams paired with Cosine Similarity. It indexes 180 clauses and 30 full contract documents in memory.<br><br>
+        This provides three major advantages: first, zero external API costs; second, complete data privacy because confidential legal agreements never leave the premises; and third, sub-20ms retrieval speed. Furthermore, I enforced a strict relevance threshold of 0.20 to eliminate hallucinations—if a query falls outside the contract repository, the engine returns 'Insufficient data' instead of guessing."</em>
+    </div>
+</div>
+
+<div class="qa-box">
+    <div class="qa-question">Q4: "How do you distinguish correlation from causation when diagnosing a delay's root cause?"</div>
+    <div class="qa-answer">
+        <strong>Model Answer:</strong> <em>"Just because a supplier delivery was delayed doesn't mean it caused the activity delay. My <code>RootCauseInvestigationEngine</code> enforces three strict validation hurdles:<br>
+        1. <strong>Relational Linkage:</strong> Was the late material actually assigned to that specific activity in the Bill of Quantities?<br>
+        2. <strong>Temporal Alignment:</strong> Did the stockout or defect occur before or during the scheduled execution window?<br>
+        3. <strong>Alternative Explanations:</strong> It cross-checks contractor labor productivity and predecessor delays.<br>
+        Only when all relational keys and timestamps align does it assign 'HIGH' confidence. If evidence is ambiguous, it returns 'Probable Root Cause' with 'MEDIUM' confidence or explicitly outputs 'Root cause not established'."</em>
+    </div>
+</div>
+
+<div class="qa-box">
+    <div class="qa-question">Q5: "Why did you implement Human-in-the-Loop in your recommendation engine?"</div>
+    <div class="qa-answer">
+        <strong>Model Answer:</strong> <em>"The platform is designed strictly as an executive decision-support system, not an autonomous agent. In mega-infrastructure programs, actions like issuing formal supplier default notices, deducting liquidated damages, or altering contractual milestones carry significant legal and financial liability.<br><br>
+        Therefore, every recommendation explicitly flags whether human approval is required, identifies the specific authorized stakeholder (e.g. Commercial Lead, Project Director), and outlines the expected benefits and implementation risks before any action is executed."</em>
+    </div>
+</div>
+
+<h2>12. Quick-Fire Cheat Sheet for Last-Minute Revision</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Concept / Metric</th>
+            <th>Formula / Rule</th>
+            <th>Practical Meaning in the Project</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><strong>Finish Delay</strong></td><td>$\text{Actual Finish} - \text{Planned Finish}$</td><td>Actual schedule slip in days for completed tasks.</td></tr>
+        <tr><td><strong>Overdue Days</strong></td><td>$\text{Cutoff Date} - \text{Planned Finish}$</td><td>Active delay for ongoing tasks past deadline (Cutoff: 2026-08-20).</td></tr>
+        <tr><td><strong>Critical Path Alert</strong></td><td>$(\text{Float} \le 0 \lor \text{is\_critical}) \land (\text{Delay} > 0)$</td><td>Flags activities that directly push back project completion.</td></tr>
+        <tr><td><strong>Stock Deficit</strong></td><td>$\text{Reserved Qty} - \text{Closing Stock}$</td><td>Warehouse stockout halting construction progress.</td></tr>
+        <tr><td><strong>Defect Rate</strong></td><td>$(\text{Rejected Qty} / \text{Received Qty}) \times 100$</td><td>Vendor delivery quality metric ($>5\%$ flags alert).</td></tr>
+        <tr><td><strong>Required Prod. Rate</strong></td><td>$\text{Remaining Work} / \text{Days to Deadline}$</td><td>Daily labor pace required to meet milestone.</td></tr>
+        <tr><td><strong>Productivity Deficit</strong></td><td>$\text{Required Rate} - \text{Actual Rate}$</td><td>Positive value means crew is mathematically underperforming.</td></tr>
+        <tr><td><strong>Cost Variance (CV)</strong></td><td>$\text{Actual Cost} - \text{Baseline Cost}$</td><td>Dollar variance against original budget baseline.</td></tr>
+        <tr><td><strong>Daily Burn Rate</strong></td><td>$\text{Actual Cost} / \text{Actual Duration}$</td><td>Site holding expenditure pace per day of delay.</td></tr>
+        <tr><td><strong>Clause 8.4</strong></td><td>Delay and Liquidated Damages</td><td>Contractual legal remedy to penalize delayed suppliers.</td></tr>
+        <tr><td><strong>Clause 14.2</strong></td><td>Change Orders</td><td>Governing procedure for scope and quantity alterations.</td></tr>
+        <tr><td><strong>Test Framework</strong></td><td>Pytest 9.1.1 (15 test cases)</td><td>Executes complete suite in 2.90 seconds with 100% pass rate.</td></tr>
+    </tbody>
+</table>
+
+</body>
+</html>
