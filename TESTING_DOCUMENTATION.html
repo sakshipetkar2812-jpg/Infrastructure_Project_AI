@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Testing Documentation - Infrastructure Project AI</title>
+<style>
+    @page {
+        size: A4;
+        margin: 20mm 18mm 20mm 18mm;
+        @bottom-right {
+            content: "Page " counter(page) " of " counter(pages);
+            font-size: 9pt;
+            color: #64748b;
+        }
+    }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1e293b;
+        line-height: 1.55;
+        font-size: 10.5pt;
+        background: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+    .header-container {
+        border-bottom: 3px solid #2563eb;
+        padding-bottom: 12px;
+        margin-bottom: 24px;
+    }
+    .project-tag {
+        display: inline-block;
+        background: #dbeafe;
+        color: #1d4ed8;
+        font-weight: 700;
+        font-size: 8.5pt;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+    h1 {
+        font-size: 22pt;
+        color: #0f172a;
+        margin: 0 0 6px 0;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+    .subtitle {
+        font-size: 11.5pt;
+        color: #475569;
+        margin: 0;
+    }
+    .meta-box {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 10px 14px;
+        margin: 16px 0 24px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        font-size: 9pt;
+    }
+    .meta-item strong {
+        display: block;
+        color: #64748b;
+        font-size: 8pt;
+        text-transform: uppercase;
+    }
+    .meta-item span {
+        color: #0f172a;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 14pt;
+        color: #1e3a8a;
+        border-bottom: 1.5px solid #e2e8f0;
+        padding-bottom: 4px;
+        margin-top: 26px;
+        margin-bottom: 12px;
+        page-break-after: avoid;
+    }
+    h3 {
+        font-size: 11.5pt;
+        color: #1e293b;
+        margin-top: 18px;
+        margin-bottom: 6px;
+        page-break-after: avoid;
+    }
+    p {
+        margin: 0 0 10px 0;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0 18px 0;
+        font-size: 9pt;
+        page-break-inside: avoid;
+    }
+    th, td {
+        border: 1px solid #cbd5e1;
+        padding: 7px 10px;
+        text-align: left;
+        vertical-align: top;
+    }
+    th {
+        background: #f1f5f9;
+        color: #0f172a;
+        font-weight: 700;
+    }
+    tr:nth-child(even) td {
+        background: #f8fafc;
+    }
+    .badge {
+        display: inline-block;
+        font-size: 8pt;
+        font-weight: 700;
+        padding: 2px 7px;
+        border-radius: 4px;
+        text-transform: uppercase;
+    }
+    .badge-pass { background: #dcfce7; color: #15803d; }
+    .badge-unit { background: #e0e7ff; color: #4338ca; }
+    .badge-integ { background: #fef3c7; color: #b45309; }
+    .badge-rag { background: #f3e8ff; color: #7e22ce; }
+    
+    .callout {
+        border-left: 4px solid #2563eb;
+        background: #eff6ff;
+        padding: 10px 14px;
+        margin: 14px 0;
+        border-radius: 0 6px 6px 0;
+        font-size: 9.5pt;
+    }
+    .callout-title {
+        font-weight: 700;
+        color: #1d4ed8;
+        margin-bottom: 4px;
+    }
+    .callout-warning {
+        border-left-color: #f59e0b;
+        background: #fffbeb;
+    }
+    .callout-warning .callout-title {
+        color: #b45309;
+    }
+    code {
+        font-family: "Consolas", "Courier New", monospace;
+        background: #f1f5f9;
+        color: #0f172a;
+        padding: 1px 4px;
+        border-radius: 3px;
+        font-size: 9pt;
+    }
+    pre {
+        background: #0f172a;
+        color: #f8fafc;
+        padding: 10px 12px;
+        border-radius: 6px;
+        font-family: "Consolas", "Courier New", monospace;
+        font-size: 8.5pt;
+        line-height: 1.45;
+        overflow-x: auto;
+        margin: 10px 0 16px 0;
+        page-break-inside: avoid;
+    }
+    .page-break {
+        page-break-before: always;
+    }
+    ul, ol {
+        margin: 0 0 12px 0;
+        padding-left: 22px;
+    }
+    li {
+        margin-bottom: 4px;
+    }
+    .test-card {
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 10px 14px;
+        margin-bottom: 12px;
+        background: #ffffff;
+        page-break-inside: avoid;
+    }
+    .test-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6px;
+        border-bottom: 1px solid #f1f5f9;
+        padding-bottom: 4px;
+    }
+    .test-name {
+        font-family: "Consolas", monospace;
+        font-weight: 700;
+        color: #1e3a8a;
+        font-size: 10pt;
+    }
+</style>
+</head>
+<body>
+
+<div class="header-container">
+    <div class="project-tag">Quality Assurance & Software Verification</div>
+    <h1>Comprehensive Testing Architecture & Verification Report</h1>
+    <div class="subtitle">Infrastructure Project Delay & Cost Overrun Intelligence Agent</div>
+</div>
+
+<div class="meta-box">
+    <div class="meta-item">
+        <strong>Test Framework</strong>
+        <span>Pytest 9.1.1</span>
+    </div>
+    <div class="meta-item">
+        <strong>Test Suite Status</strong>
+        <span style="color:#16a34a;">15 / 15 Passed (100%)</span>
+    </div>
+    <div class="meta-item">
+        <strong>Execution Time</strong>
+        <span>2.90 Seconds</span>
+    </div>
+    <div class="meta-item">
+        <strong>Integration Scope</strong>
+        <span>12,633 Real Activities</span>
+    </div>
+</div>
+
+<h2>1. Executive Summary & Testing Philosophy</h2>
+<p>
+    In mission-critical infrastructure construction management, inaccurate schedule or financial projections can trigger multi-crore contractual claims, unjustified vendor penalties, or flawed resource allocation. Testing this AI decision-support platform required an unwavering architectural principle:
+</p>
+<div class="callout">
+    <div class="callout-title">Core Testing Doctrine</div>
+    <strong>Deterministic arithmetic must be mathematically provable; non-deterministic AI must be evidence-grounded and anti-hallucinatory.</strong>
+    Mathematical calculations (CPM float, overdue days, cost variance, stock deficits, productivity rates) are tested against hand-calculated ground truths. AI and RAG components are tested to ensure they cite exact verbatim contract clauses and strictly output <em>"Insufficient data"</em> when queries fall outside verified records.
+</div>
+
+<p>
+    The automated test suite is housed in <code>tests/test_intelligence_agent.py</code> and can be triggered via the single-click PowerShell script <code>.\run_tests.ps1</code> or directly via <code>python -m pytest</code>.
+</p>
+
+<h2>2. Test Hierarchy & Pyramidal Strategy</h2>
+<p>
+    The testing suite is structured into four distinct layers ensuring robust coverage from low-level functions to end-to-end integration:
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Testing Tier</th>
+            <th>Target Module</th>
+            <th>Primary Objective</th>
+            <th>Test Isolation Method</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Layer 1: Unit Tests</strong></td>
+            <td><code>ScheduleEngine</code>, <code>CostEngine</code>, <code>ProcurementEngine</code>, <code>ContractorEngine</code></td>
+            <td>Verify arithmetic correctness for dates, float, burn rate, productivity deficit, and budget variance.</td>
+            <td>Isolated synthetic DataFrames with known mathematical ground truths.</td>
+        </tr>
+        <tr>
+            <td><strong>Layer 2: Contract & RAG Tests</strong></td>
+            <td><code>ContractRAGEngine</code></td>
+            <td>Verify TF-IDF vector indexing, relevance scoring thresholding, and anti-hallucination guards.</td>
+            <td>Structured clause datasets & verified negative (unsupported) queries.</td>
+        </tr>
+        <tr>
+            <td><strong>Layer 3: Multi-Agent Logic</strong></td>
+            <td><code>ProjectRiskSupervisor</code></td>
+            <td>Verify detection and resolution of inter-agent telemetry contradictions.</td>
+            <td>Synthetic conflicting agent payloads (e.g. on-time with cost overrun).</td>
+        </tr>
+        <tr>
+            <td><strong>Layer 4: System Integration</strong></td>
+            <td><code>ProjectDataLoader</code>, <code>DataQualityChecker</code>, Streamlit App</td>
+            <td>Verify end-to-end ingestion across all 14 attached files and clean dashboard compilation.</td>
+            <td>Full production dataset (12,633 activities, 30 contracts, 15,571 dependencies).</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h2>3. In-Depth Breakdown of All 15 Acceptance Test Cases</h2>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 1: test_date_parsing_and_missing_dates</span>
+        <span class="badge badge-unit">Unit Test</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> Construction schedules routinely contain incomplete activities where <code>actual_finish</code> is empty. A naive parser might crash, default missing dates to epoch zero, or incorrectly assume the activity took zero days.</p>
+    <p><strong>Implementation:</strong> Injects an activity with <code>actual_finish: ""</code>. Tests that <code>pd.to_datetime()</code> does not mutate or crash, preserves <code>pd.isna(actual_finish)</code>, correctly classifies <code>is_in_progress == True</code>, and measures overdue days against the <code>cutoff_date</code>.</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 2 & 3: test_completed_activity_delay</span>
+        <span class="badge badge-unit">Unit Test</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> A completed activity must have its delay calculated strictly by comparing its actual completion date to its planned completion date, ignoring current reporting cutoff dates.</p>
+    <p><strong>Implementation:</strong> Injects an activity with planned finish <code>2026-01-10</code> and actual finish <code>2026-01-18</code>. Asserts that <code>finish_delay_days == 8</code>, <code>delay_days == 8</code>, and <code>is_overdue == False</code> (because completed tasks are no longer actively overdue).</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 4: test_incomplete_overdue_activity</span>
+        <span class="badge badge-unit">Unit Test</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> For ongoing activities, project managers need to know how many days have elapsed past the baseline deadline as of the reporting cycle cutoff date.</p>
+    <p><strong>Implementation:</strong> Injects an in-progress milestone activity with planned finish <code>2026-03-01</code> evaluated against a cutoff date of <code>2026-03-15</code>. Asserts that <code>is_overdue == True</code>, <code>overdue_days == 14</code>, and <code>milestone_delayed == True</code>.</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 5: test_zero_and_negative_delay</span>
+        <span class="badge badge-unit">Unit Test</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> The system must handle activities that finish ahead of schedule (negative delay) or exactly on target without producing false-positive delay alerts.</p>
+    <p><strong>Implementation:</strong> Tests two activities: one finishing 4 days early (<code>finish_delay_days == -4</code>) and one finishing on the exact planned date (<code>finish_delay_days == 0</code>). Asserts that both are categorized as <code>ON_TIME</code> with zero penalty points.</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 6: test_cost_variance_calculation</span>
+        <span class="badge badge-unit">Unit Test</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> Project leadership requires accurate cost variance and daily burn rate tracking to calculate financial exposure on extended activities.</p>
+    <p><strong>Implementation:</strong> Injects an activity with <code>baseline_cost = 50,000</code>, <code>actual_cost = 65,000</code>, and <code>delay_days = 5</code>. Asserts that <code>cost_variance == 15,000</code> (30% overrun) and calculates ongoing daily burn rate exposure.</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 7: test_missing_budget_information</span>
+        <span class="badge badge-unit">Edge Case</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> Unplanned site activities or emergency work orders may have a baseline budget of zero or null. Dividing by zero would crash the dashboard.</p>
+    <p><strong>Implementation:</strong> Tests an activity with <code>baseline_cost = 0.0</code> and <code>actual_cost = 10,000.0</code>. Asserts that <code>cost_variance_pct</code> returns <code>0.0%</code> gracefully without raising a <code>ZeroDivisionError</code>.</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 8: test_unmatched_procurement_records</span>
+        <span class="badge badge-unit">Edge Case</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> Not all construction tasks require physical materials (e.g. surveying, site clearance, approvals). Unmatched activities must not trigger false inventory alerts.</p>
+    <p><strong>Implementation:</strong> Queries procurement status for an activity with no matching BOQ rows. Asserts that <code>has_material_requirement == False</code>, <code>materials == []</code>, and <code>has_shortage == False</code>.</p>
+</div>
+
+<div class="page-break"></div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 9: test_supplier_performance_calculation</span>
+        <span class="badge badge-unit">Unit Test</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> Procurement teams must distinguish vendor delivery shortages from quality inspection rejections.</p>
+    <p><strong>Implementation:</strong> Supplies 1,000 received units, 900 accepted, and 100 rejected (10% defect rate) with warehouse reserved stock exceeding closing stock by 300 units. Asserts acceptance rate is exactly <code>90.0%</code> and stock deficit is <code>300.0</code> units.</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 10: test_rag_evidence_retrieval</span>
+        <span class="badge badge-rag">RAG Test</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> Legal claims must be grounded in exact contractual language with verifiable section and clause identifiers.</p>
+    <p><strong>Implementation:</strong> Indexes Clause 8.4 ("Delay and Liquidated Damages"). Queries with <em>"liquidated damages penalty delay"</em>. Asserts top retrieved chunk is Clause 8.4, <code>penalty_applicable == True</code>, and cosine similarity exceeds relevance threshold.</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 11: test_unsupported_contract_questions</span>
+        <span class="badge badge-rag">Anti-Hallucination</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> LLM/RAG systems must never invent terms or penalties for out-of-scope inquiries.</p>
+    <p><strong>Implementation:</strong> Queries the contract engine with an out-of-domain prompt: <em>"What is the software license agreement for the Salesforce CRM platform?"</em>. Asserts the system returns <code>evidence_retrieved == False</code> and outputs <em>"Insufficient data"</em>.</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 12: test_supervisor_conflict_resolution</span>
+        <span class="badge badge-integ">Agent Test</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> Specialist agents may report contradictory telemetry that must be detected and reconciled before executive reporting.</p>
+    <p><strong>Implementation:</strong> Feeds the Supervisor an activity with <code>delay_days = 0</code> but a <code>cost_variance = 50,000</code>. Asserts the Supervisor flags a <code>Cost vs Schedule Discrepancy</code> and explains that the overrun is driven by unit rates rather than schedule delay.</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 13: test_local_fallback_without_api_credentials</span>
+        <span class="badge badge-unit">Offline Test</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> The core analytics and RAG capabilities must remain 100% operational offline without external API keys or cloud dependencies.</p>
+    <p><strong>Implementation:</strong> Clears environment API keys, initializes the local TF-IDF retriever, and validates that question answering and clause retrieval function locally without network calls.</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 14: test_empty_datasets_handling</span>
+        <span class="badge badge-unit">Resilience Test</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> Corrupted or empty input files must fail gracefully rather than crashing the runtime server.</p>
+    <p><strong>Implementation:</strong> Feeds empty DataFrames into <code>DataQualityChecker</code> and <code>ScheduleEngine</code>. Asserts that the audit score reflects missing data penalties and returns empty structured results safely.</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 15: test_integration_on_actual_workspace_data</span>
+        <span class="badge badge-integ">Integration Test</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> Verify that the entire pipeline scales smoothly across the actual 100-project workspace dataset.</p>
+    <p><strong>Implementation:</strong> Ingests the full 12,633-row activities dataset and 15,571 dependencies, executes <code>ScheduleEngine.analyze()</code>, and verifies KPI generation for project <code>PRJ-0001</code>.</p>
+</div>
+
+<div class="test-card">
+    <div class="test-header">
+        <span class="test-name">Test 16: test_dashboard_module_imports</span>
+        <span class="badge badge-integ">Smoke Test</span> <span class="badge badge-pass">PASSED</span>
+    </div>
+    <p><strong>Business Need:</strong> Ensure that the Streamlit UI script has zero syntax errors, missing imports, or broken symbol links.</p>
+    <p><strong>Implementation:</strong> Compiles <code>dashboard/app.py</code> into Python bytecode using <code>compile()</code> to verify syntactical integrity prior to web server launch.</p>
+</div>
+
+<div class="page-break"></div>
+
+<h2>4. Test Execution & Automation Architecture</h2>
+<p>
+    The testing suite is configured for instant developer and CI/CD execution. The automated runner script <code>run_tests.ps1</code> configures the local <code>PYTHONPATH</code> and executes pytest with verbose output:
+</p>
+
+<pre>
+# Execution Command
+$env:PYTHONPATH = "C:\Users\ompet\OneDrive\Desktop\infras_project\Infrastructure_Project_AI"
+python -m pytest tests/test_intelligence_agent.py -v
+
+# Verified Execution Output
+============================= test session starts =============================
+platform win32 -- Python 3.15.0, pytest-9.1.1, pluggy-1.7.0
+cachedir: .pytest_cache
+rootdir: C:\Users\ompet
+plugins: anyio-4.15.1
+collected 15 items
+
+tests/test_intelligence_agent.py::test_date_parsing_and_missing_dates PASSED      [  6%]
+tests/test_intelligence_agent.py::test_completed_activity_delay PASSED            [ 13%]
+tests/test_intelligence_agent.py::test_incomplete_overdue_activity PASSED         [ 20%]
+tests/test_intelligence_agent.py::test_zero_and_negative_delay PASSED             [ 26%]
+tests/test_intelligence_agent.py::test_cost_variance_calculation PASSED           [ 33%]
+tests/test_intelligence_agent.py::test_missing_budget_information PASSED          [ 40%]
+tests/test_intelligence_agent.py::test_unmatched_procurement_records PASSED       [ 46%]
+tests/test_intelligence_agent.py::test_supplier_performance_calculation PASSED    [ 53%]
+tests/test_intelligence_agent.py::test_rag_evidence_retrieval PASSED             [ 60%]
+tests/test_intelligence_agent.py::test_unsupported_contract_questions PASSED     [ 66%]
+tests/test_intelligence_agent.py::test_supervisor_conflict_resolution PASSED     [ 73%]
+tests/test_intelligence_agent.py::test_local_fallback_without_api_credentials PASSED [ 80%]
+tests/test_intelligence_agent.py::test_empty_datasets_handling PASSED             [ 86%]
+tests/test_intelligence_agent.py::test_integration_on_actual_workspace_data PASSED [ 93%]
+tests/test_intelligence_agent.py::test_dashboard_module_imports PASSED            [100%]
+
+============================= 15 passed in 2.90s ==============================
+</pre>
+
+<h2>5. Data Ethics & Test Data Isolation</h2>
+<p>
+    In compliance with strict data engineering standards, test isolation was maintained through clear boundaries:
+</p>
+<ul>
+    <li><strong>No Mock Pollution:</strong> Synthetic test data is isolated strictly inside individual unit test functions. It is never persisted into the <code>data/raw/</code> directory or merged with the actual 100-project dataset.</li>
+    <li><strong>Zero In-Place File Mutation:</strong> Ingestion and analytics tests operate on read-only in-memory copies of the raw CSVs, preserving original audit trails.</li>
+    <li><strong>Zero Fabrication Rule:</strong> Incomplete records return explicit <code>"Insufficient data"</code> status rather than fabricating optimistic metrics to make dashboards look artificially complete.</li>
+</ul>
+
+<h2>6. Key Interview Talking Points on Testing</h2>
+<div class="callout callout-warning">
+    <div class="callout-title">How to Ace the "Testing" Question in Your Interview</div>
+    <ul>
+        <li><strong>"How did you test your RAG system?"</strong> &rarr; <em>"We tested it symmetrically for precision and anti-hallucination. In Test 10, we validated that queries on liquidated damages retrieved Clause 8.4 with high cosine similarity. In Test 11, we passed out-of-domain queries and verified that the relevance floor tripped, returning 'Insufficient data' instead of guessing."</em></li>
+        <li><strong>"Why Pytest over manual verification?"</strong> &rarr; <em>"Infrastructure data involves interdependent networks. A small code modification in float calculation could break downstream CPM propagation across 15,500 links. Pytest gives us 15 automated regression checks running in under 3 seconds on every commit."</em></li>
+        <li><strong>"How did you test multi-agent interactions?"</strong> &rarr; <em>"In Test 12, we injected synthetic conflicting agent payloads—such as an activity having zero delay but a massive cost overrun—to prove that the Project Risk Supervisor detects the contradiction and reconciles it logically."</em></li>
+    </ul>
+</div>
+
+</body>
+</html>
